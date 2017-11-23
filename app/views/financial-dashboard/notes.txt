@@ -1,0 +1,41 @@
+<a class="link-back" href="/url/of/previous/page">Back</a>
+
+
+li class="previous"
+li class="next"
+
+.previous-next-navigation li {
+display: block;
+padding: 0;
+margin: 0;
+width: 50|%
+float: left;
+}
+
+
+.previous-next-navigation li {
+display: block;
+padding: 0;
+margin: 0;
+width: 50|%
+float: right;
+}
+
+
+.previous-next-navigation li a:before
+
+
+a:before
+
+The garden is 490cm width x 350cm length/depth with 40cm of soil all around
+30meters  2x2 treated wood 
+3.6*4=14.4
+15.4m2 of decking
+screws 200 sinking
+5 x 3.5m
+
+
+ 
+
+
+

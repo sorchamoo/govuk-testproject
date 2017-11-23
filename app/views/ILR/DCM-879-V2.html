@@ -1,0 +1,359 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<div class="header-user">
+        <div class="header-inner">
+            <div class="account-information" role="navigation">
+                <nav id="user-nav">
+                    <ul role="menubar">
+                        <li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/service/help">Help</a></li>
+                            <li class="has-sub-menu">
+                                <a href="/" role="menuitem">Settings</a>
+                                <ul role="menu" class="js-hidden" aria-hidden="true">
+                                    <li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/service/accounts" role="menuitem">Your accounts</a></li>
+                                        <li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/XVJX9V/rename/" role="menuitem">Rename account</a></li>
+                                    <li><a href="https://demo-login.apprenticeships.sfa.bis.gov.uk/account/changepassword?clientId=eascmtdemo&amp;returnurl=https%3a%2f%2fdemo-empc.apprenticeships.sfa.bis.gov.uk%2fcommitments%2fservice%2fpassword%2fchange">Change your password</a></li>
+                                    <li><a href="https://demo-login.apprenticeships.sfa.bis.gov.uk/account/changeemail?clientId=eascmtdemo&amp;returnurl=https%3a%2f%2fdemo-empc.apprenticeships.sfa.bis.gov.uk%2fcommitments%2fservice%2femail%2fchange">Change your email address</a></li>
+                                    <li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/settings/notifications">Notification settings</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/commitments/Service/signout" role="menuitem">Sign out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+<div class="header-organisation" role="navigation">
+            <nav class="header-inner">
+                <ul role="menubar" id="global-nav-links"><li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/XVJX9V/teams/" class="" role="menuitem">Home</a></li><li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/XVJX9V/balance/" class="" role="menuitem">Finance</a></li><li><a href="/commitments/accounts/XVJX9V/apprentices/home" class="selected" role="menuitem">Apprentices</a></li><li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/XVJX9V/teams/view" class="" role="menuitem">Your team</a></li><li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/XVJX9V/agreements/" class="" role="menuitem">Your organisations and agreements</a></li><li class="menu-link"><a href="#">More</a><ul><li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/XVJX9V/schemes/" class="" role="menuitem">PAYE schemes</a></li></ul></li></ul>
+            </nav>
+        </div>
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+<!--added breadcrumbs here -->
+    <div class="breadcrumbs">
+            <a href="/commitments/accounts/XVJX9V/apprentices/home" aria-label="Back to Apprentices" class="back-link">Back to Apprentices</a>
+        </div>
+    <!--added form here -->
+    <form method="POST" action="/commitments/accounts/XVJX9V/apprentices/MPNYPM/apprenticeships/VWD7WM/edit" novalidate="novalidate">
+            <input name="__RequestVerificationToken" type="hidden" value="fV31TSP1lyNMxLl5ZONPaI10a0MEDkXZTWHpnriEZs3k57dDOZwAeIIoN7URxcBXG7mBsSvkwRbxykwryv2WaodAhJbumnyXkS-yJAV0POuxrOL43SSglzMyogHbJyR08gvIZw2">
+
+            <h1 class="heading-xlarge">Edit apprentice details</h1>
+            <div class="panel panel-border-wide">
+                <p>
+                    You’ll only be able to authorise payments for this apprentice once all the fields have been completed – either by yourself or your training provider.
+                </p>
+            </div>
+
+            <hr>
+
+
+<div class="form-group ">
+    <label class="form-label form-label-bold" for="FirstName">First name</label>
+    <input class="form-control form-control-3-4" id="FirstName" name="FirstName" type="text" value="Sorcha">
+</div>
+
+<div class="form-error-group form-group ">
+    <label class="form-label form-label-bold" for="LastName">Last name</label>
+    <input class="form-control form-control-3-4" id="LastName" name="LastName" type="text" value="Moore">
+
+</div>
+
+<div class="form-error-group form-group ">
+    <hr>
+    <span class="form-label-bold">Date of birth</span>
+    <span class="form-hint">For example, 08 12 2001</span>
+
+    <div id="DateOfBirth" class="form-date">
+
+
+        <div class="form-group form-group-day">
+            <label for="DateOfBirth.Day">
+                Day
+            </label>
+
+            <input aria-labelledby="DateOfBirth.Day" class="form-control length-limit" id="DateOfBirth_Day" max="31" maxlength="2" min="1" name="DateOfBirth.Day" type="number" value="9">
+
+        </div>
+        <div class="form-group form-group-month">
+            <label for="DateOfBirth.Month">
+                Month
+            </label>
+
+            <input aria-labelledby="DateOfBirth.Month" class="form-control length-limit" id="DateOfBirth_Month" max="12" maxlength="2" min="1" name="DateOfBirth.Month" type="number" value="9">
+
+        </div>
+        <div class="form-group form-group-year">
+            <label for="DateOfBirth.Year">
+                Year
+            </label>
+
+            <input aria-labelledby="DateOfBirth.Year" class="form-control length-limit" id="DateOfBirth_Year" max="9999" maxlength="4" min="1900" name="DateOfBirth.Year" type="number" value="1990">
+        </div>
+    </div>
+</div>
+
+<div class="form-group ">
+    <hr>
+    <label class="form-label-bold" for="TrainingCode">Apprenticeship training course</label>
+    <span class="form-hint">Start typing in the name of the course or choose an option from the list</span>
+    <select name="TrainingCode" id="TrainingCode" class="form-control form-control-3-4 select2-hidden-accessible" aria-label="Apprenticeship training course" tabindex="-1" aria-hidden="true">
+        <option value="">Please select</option>
+            <option value="34">
+                Able seafarer (deck), Level: 2 (Standard)
+            </option>
+            <option value="176">
+                Accident Repair Technician, Level: 3 (Standard)
+            </option>
+            <option value="454-3-1">
+                Accounting, Level: 2
+            </option>
+            <option value="454-2-1" selected="">
+                Accounting, Level: 3
+            </option>
+            <option value="454-20-1">
+                Accounting, Level: 4
+            </option>
+            <option value="460-3-3">
+                Activity Leadership: Coaching, Level: 2
+            </option>
+            <option value="460-3-2">
+                Activity Leadership: Exercise and Fitness, Level: 2
+            </option>
+            <option value="460-3-4">
+                Activity Leadership: Leadership, Level: 2
+            </option>
+            <option value="460-3-1">
+                Activity Leadership: Outdoors, Level: 2
+            </option>
+            <option value="17">
+                Actuarial technician, Level: 4 (Standard)
+            </option>
+            <option value="551-3-8">
+                Furniture, Furnishings and Interiors Manufacturing: Furniture and Wood Processing - CNC Machining, Level: 2
+            </option>
+            <option value="551-3-7">
+                Furniture, Furnishings and Interiors Manufacturing: Furniture and Wood Processing, Level: 2
+            </option>
+            <option value="551-2-5">
+                Furniture, Furnishings and Interiors Manufacturing: Furniture Design, Level: 3
+            </option>
+            <option value="551-3-1">
+                Furniture, Furnishings and Interiors Manufacturing: Furniture Making, Level: 2
+            </option>
+            <option value="551-2-1">
+                Furniture, Furnishings and Interiors Manufacturing: Furniture Making, Level: 3
+            </option>
+             <option value="551-2-7">
+                Furniture, Furnishings and Interiors Manufacturing: Supervision in the Furniture, Furnishings and Interiors Industry, Level: 3
+            </option>
+            <option value="551-3-5">
+                Furniture, Furnishings and Interiors Manufacturing: Upholstery and Soft Furnishings, Level: 2
+            </option>
+            <option value="551-2-6">
+                Furniture, Furnishings and Interiors Manufacturing: Upholstery and Soft Furnishings, Level: 3
+            </option>
+            <option value="551-3-6">
+                Furniture, Furnishings and Interiors Manufacturing: Wood Machining, Level: 2
+            </option>
+            <option value="551-2-8">
+                Furniture, Furnishings and Interiors Manufacturing: Wood Machining, Level: 3
+            </option>
+
+            <option value="560-2-4">
+                Maritime Occupations: Officer of the watch on merchant vessels of less than 3,000 gross tonnage - near coastal, Level: 3
+            </option>
+            <option value="560-2-3">
+                Maritime Occupations: Officer of the watch on merchant vessels of less than 500 gross tonnage - near coastal, Level: 3
+            </option>
+            <option value="560-3-5">
+                Maritime Occupations: Port Operations, Level: 2
+            </option>
+            <option value="560-3-1">
+                Maritime Occupations: Rivers, inland waterways and limited distances to sea, Level: 2
+            </option>
+            <option value="560-3-2">
+                Maritime Occupations: Sea Fishing, Level: 2
+            </option>
+            <option value="560-3-6">
+                Maritime Occupations: Workboat Operation, Level: 2
+            </option>
+
+            <option value="593-20-1">
+                Mineral Products Technology: Technical and Managerial Development in Mineral Products Technology Industry, Level: 4
+            </option>
+            <option value="62">
+                Mortgage adviser, Level: 3 (Standard)
+            </option>
+            <option value="59">
+                Motor vehicle service and maintenance technician (light vehicle), Level: 3 (Standard)
+            </option>
+            <option value="509-3-1">
+                Nail Services, Level: 2
+            </option>
+            <option value="509-2-1">
+                Nail Services, Level: 3
+            </option>
+            <option value="1">
+                Network engineer, Level: 4 (Standard)
+            </option>
+
+            <option value="512-2-3">
+                Plumbing and Heating: Domestic Plumbing and Heating Gas-Fired Water and Central Heating Appliances, Level: 3
+            </option>
+            <option value="512-2-1">
+                Plumbing and Heating: Domestic Plumbing and Heating Oil-Fired, Solid Fuel or Environmental options, Level: 3
+            </option>
+            <option value="512-3-1">
+                Plumbing and Heating: Plumbing, Level: 2
+            </option>
+            <option value="407-2-1">
+                Policing: Defence Policing, Level: 3
+            </option>
+            <option value="166">
+                Postgraduate Engineer, Level: 7 (Standard)
+            </option>
+            <option value="161">
+                Power Engineer, Level: 7 (Standard)
+            </option>
+
+            <option value="455-3-5">
+                Providing Financial Services: Administration for Mortgage and/or Financial Planning Intermediaries, Level: 2
+            </option>
+            <option value="455-2-5">
+                Providing Financial Services: Administration for Mortgage and/or Financial Planning Intermediaries, Level: 3
+            </option>
+            <option value="455-3-2">
+                Providing Financial Services: Banking, Level: 2
+            </option>
+            <option value="455-2-2">
+                Providing Financial Services: Banking, Level: 3
+            </option>
+            <option value="455-3-7">
+                Providing Financial Services: Customer Payments for Financial Products and Services, Level: 2
+            </option>
+
+    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 473px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-TrainingCode-container"><span class="select2-selection__rendered" id="select2-TrainingCode-container" title="
+                Accounting, Level: 3
+            ">
+                Accounting, Level: 3
+            </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
+</div>
+
+<div class="form-error-group form-group ">
+    <hr>
+
+    <span class="form-label-bold">Planned training start date</span>
+    <span class="form-hint">For example, 09 2017</span>
+
+    <div id="StartDate" class="form-date">
+
+
+        <div class="form-group form-group-month">
+            <label for="StartDate.Month">
+                Month
+            </label>
+
+            <input aria-labelledby="StartDate.Month" class="form-control length-limit" id="StartDate_Month" max="12" maxlength="2" min="1" name="StartDate.Month" type="number" value="12">
+
+        </div>
+        <div class="form-group form-group-month">
+            <label for="StartDate.Year">
+                Year
+            </label>
+            <input aria-labelledby="StartDate.Year" class="form-control length-limit" id="StartDate_Year" max="9999" maxlength="4" min="1900" name="StartDate.Year" type="number" value="2017">
+        </div>
+    </div>
+
+</div>
+
+<div class="form-error-group form-group ">
+
+    <span class="form-label-bold">Planned training finish date</span>
+    <span class="form-hint">For example, 02 2019</span>
+
+    <div id="EndDate" class="form-date">
+
+        <div class="form-group form-group-month">
+            <label for="EndDate.Month">
+                Month
+            </label>
+
+            <input aria-labelledby="EndDate.Month" class="form-control length-limit" id="EndDate_Month" max="12" maxlength="2" min="1" name="EndDate.Month" type="number" value="9">
+
+        </div>
+        <div class="form-group form-group-month">
+            <label for="EndDate.Year">
+                Year
+            </label>
+            <input aria-labelledby="EndDate.Year" class="form-control length-limit" id="EndDate_Year" max="9999" maxlength="4" min="1900" name="EndDate.Year" type="number" value="2018">
+        </div>
+    </div>
+
+
+</div>
+
+<div class="form-error-group form-group ">
+
+    <hr>
+    <label for="Cost">
+        <span class="form-label-bold">Total agreed apprenticeship price (excluding VAT)</span>
+        <span class="form-hint">Enter the price, including any end-point assessment costs, in whole pounds.</span>
+        <span class="form-hint">For example, for £1,500 enter 1500</span>
+
+    </label>
+
+    <span class="heading-small">£ </span><input aria-labelledby="Cost" class="form-control form-control-3-4" id="Cost" maxlength="7" name="Cost" type="text" value="2000">
+
+</div>
+
+<div class="form-group optional-ref ">
+    <hr>
+    <label class="form-label-bold" for="EmployerRef">Reference (optional)</label>
+    <span class="form-hint">Add a reference, such as employee number or location - this won't be seen by the training provider</span>
+    <input class="form-control form-control-3-4" id="EmployerRef" name="EmployerRef" type="text" value="sorcha">
+    <p id="charCount-noJS" style="display: none;">Enter up to a maximum of 20 characters</p>
+    <p id="charCount" style=""><span name="countchars" id="countchars">14</span> characters remaining</p>
+</div>
+
+
+
+
+            <div class="form-group">
+                <hr>
+                <div class="grey-background">
+                    <p class="form-label-bold">End-point assessments</p>
+                    <p>If you've chosen an apprenticeship standard, we'll ask you to confirm the <a href="https://www.gov.uk/government/publications/using-the-register-of-apprentice-assessment-organisations" target="_blank" title="Opens in a new window" rel="external">apprentice assessment organisation</a> for this apprentice. We'll do this before the end of the apprenticeship.</p>
+                    <p>
+                        Apprenticeship frameworks have different assessment arrangements and don't need end-point assessments.
+                    </p>
+                </div>
+            </div>
+
+            <input id="ULN" name="ULN" type="hidden" value="">
+            <input id="AgreementStatus" name="AgreementStatus" type="hidden" value="NotAgreed">
+            <input id="ProviderRef" name="ProviderRef" type="hidden" value="">
+
+            <button type="submit" class="button" id="submit-edit-app-entry">Save</button>
+            <a class="button delete-button" href="/commitments/accounts/XVJX9V/apprentices/MPNYPM/Apprenticeships/VWD7WM/Delete" aria-label="Cancel">Delete</a>
+            <a class="links" href="/commitments/accounts/XVJX9V/apprentices/MPNYPM/details" aria-label="Cancel">Cancel</a>
+
+        </form>
+
+
+
+</div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

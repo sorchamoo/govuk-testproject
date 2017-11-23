@@ -1,0 +1,199 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="/accounts/8MGY6M/teams">Home</a></li>
+            <li>Your transactions</li>
+            <li>Payment details</li>
+            <li>Apprentice details</li>
+        </ol>
+    </div>
+
+    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+    <a href="#" onClick="backAway()">< Back</a>
+
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-xlarge">
+            Bart Hill: Payment details 04 October 2017
+        </h1>
+
+    </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+<h2 class="heading-medium">How this payment was calculated:</h2>
+            <table>
+              <tbody>
+                        <tr>
+                            <td>
+                                <span class="no-wrap"> Course </span>
+                            </td>
+                            <td>
+                                <span class="no-wrap"> Level 4 Engineering </span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="no-wrap"> Training provider </span>
+                            </td>
+                            <td>
+                                <span class="no-wrap"> Barnfield College </span>
+                            </td>
+
+                        </tr>  <tr>
+                            <td>
+                                <span class="no-wrap"> Total cost of training </span>
+                            </td>
+                            <td>
+                                <span class="no-wrap"> £27,000.00 </span>
+                            </td>
+                            </tr>  <tr>
+                              <td>
+                                  <span class="no-wrap"> 20% completion payment </span>
+                              </td>
+                              <td>
+                                  <span class="no-wrap"> £5,400.00 </span>
+                              </td>
+                            </tr><tr>
+                              <td>
+                                  <span class="no-wrap">  Total paid to 04 October</span>
+                              </td>
+                              <td>
+                                  <span class="no-wrap">£0.00 </span>
+                              </td>
+                            </tr><tr>
+                              <td>
+                                  <span class="no-wrap"> <span style="font-weight:bold;"> Amount paid on 04 October </span></span>
+                              </td>
+                              <td>
+                                  <span class="no-wrap"><span style="font-weight:bold;"> -£981.82 </span></span>
+                              </td>
+
+                          </tr><tr>
+                            <td>
+                                <span class="no-wrap"> Total left to pay </span>
+                            </td>
+                            <td>
+                                <span class="no-wrap"> £20,618.18 </span>
+                            </td>
+
+                        </tr><tr>
+                          <td>
+                              <span class="no-wrap"> Number of monthly payments left </span>
+                          </td>
+                          <td>
+                              <span class="no-wrap"> 21 </span>
+                          </td>
+
+                      </tr><tr>
+                        <td>
+                            <span class="no-wrap"> Cost of each installment </span>
+                        </td>
+                        <td>
+                            <span class="no-wrap"> £981.82 </span>
+                        </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+<br />
+               <table>
+                  <tbody>
+                    <tr>
+                      <thead colspan="2">
+                          <span class="no-wrap"> The number of installments is calculated using the following information: </span>
+                      </thead>
+                    </tr>
+                  </tr><tr>
+                    <td>
+                        <span class="no-wrap"> Training start date </span>
+                    </td>
+                    <td>
+                        <span class="no-wrap"> 17 June 2017 </span>
+                    </td>
+                  </tr>
+                </tr><tr>
+                  <td>
+                      <span class="no-wrap"> Training end date </span>
+                  </td>
+                  <td>
+                      <span class="no-wrap"> 28 May 2019 </span>
+                  </td>
+                </tr>
+              </tr><tfoot>
+                <td>
+                    <span class="no-wrap"> Total number of monthly payments </span>
+                </td>
+                <td>
+                    <span class="no-wrap"> 22 </span>
+                </td>
+              </tfoot>
+
+                </tbody>
+            </table>
+
+            <ul class="previous-next-navigation">
+                            <li class="previous">
+                                <a href="DCM-879.html">
+                                    Previous <span class="hide-mobile">month</span>
+                                    <span class="detail">August 2017</span>
+                                </a>
+                            </li>
+                                        <li class="next">
+                                <a href="DCM-879-V2.html">
+                                    Next month
+                                    <span class="detail">October 2017</span>
+
+                                </a>
+                            </li>
+                    </ul>
+
+<a class="link-back" href="/url/of/previous/page">Back</a>
+<details>
+
+<br />
+  <summary><span class="summary">The monthly payment is not what I expect</span></summary>
+
+  <div class="panel panel-border-narrow">
+
+        <p>
+    The monthly payment can change from month to month for a number of reasons. These include a chance to the end date, a change to the total cost of training or a missed payment in a previous mont. Contact our support team for more details on individual paymnents.
+    </p>
+
+  </div>
+
+</details>
+
+
+
+</div> <!--end div for 3/4 size -->
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

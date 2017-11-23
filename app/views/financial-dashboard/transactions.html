@@ -1,0 +1,203 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li>Your transactions</li>
+
+        </ol>
+    </div>
+
+    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+
+    <a href="#" class="link-back" onClick="backAway()"> Back</a>
+
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-xlarge">
+            Your transactions
+        <span class="heading-secondary">August 2017</span>
+        </h1>
+        <div class="grid-row">
+            <div class="column-full">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col"><span class="no-wrap">Payment date</span></th>
+                                <th scope="col" class="mobile-hide-cell">Description</th>
+                                <th scope="col" class="numeric">Amount</th>
+                                <th scope="col"><span class="vh">Action</span></th>
+                                <th scope="col"><span class="vh">Balance</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="no-wrap"> 23 Aug 2017 </span>
+                                    </td>
+                                    <td class="mobile-hide-cell">
+                                        <span class="description">
+                                            Levy
+                                        </span>
+                                    </td>
+
+
+
+                                    <td class="numeric"> <span class="no-wrap"> £6,050.00 </span> </td>
+
+                                    <td class="link-right">
+                                            <a title="View details for the transaction on 23 Aug 2017" href="#">
+                                                Details <span class="vh"> for the transaction on 23 Aug 2017</span>
+                                            </a>
+                                    </td>
+                                    <td  class="numeric">£2,000,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="no-wrap"> 5 Aug 2017 </span>
+                                    </td>
+                                    <td class="mobile-hide-cell">
+                                        <span class="description">
+                                            Co-investment - TRAIN 4 LIMITED
+                                        </span>
+                                    </td>
+
+
+
+                                    <td class="numeric"> <span class="no-wrap"> -£6,857.13 </span> </td>
+
+                                    <td class="link-right">
+                                            <a title="View details for the transaction on 5 Aug 2017" href="#">
+                                                Details <span class="vh"> for the transaction on 5 Aug 2017</span>
+
+                                            </a>
+                                    </td>
+                                    <td  class="numeric">£2,000,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="no-wrap"> 5 Aug 2017 </span>
+                                    </td>
+                                    <td class="mobile-hide-cell">
+                                        <span class="description">
+                                            Co-investment - BARNFIELD COLLEGE
+                                        </span>
+                                    </td>
+
+
+
+                                    <td class="numeric"> <span class="no-wrap"> -£266.66 </span> </td>
+
+                                    <td class="link-right">
+                                            <a title="View details for the transaction on 5 Aug 2017" href="#">
+                                                Details <span class="vh"> for the transaction on 5 Aug 2017</span>
+
+                                            </a>
+                                    </td>
+                                    <td  class="numeric">£2,000,000
+                                    </td>
+                                </tr>
+                      
+
+
+                              <tr>
+                                  <td>
+                                      <span class="no-wrap"> 23 Jul 2017 </span>
+                                  </td>
+                                  <td class="mobile-hide-cell">
+                                      <span class="description">
+                                          Levy
+                                      </span>
+                                  </td>
+
+
+
+                                  <td class="numeric"> <span class="no-wrap"> £6,050.00 </span> </td>
+
+                                  <td class="link-right">
+                                          <a title="View details for the transaction on 23 Jul 2017" href="/accounts/8MGY6M/balance/levyDeclaration/details?fromDate=07%2F23%2F2017%2000%3A00%3A00&amp;toDate=07%2F23%2F2017%2023%3A59%3A59">
+                                              Details <span class="vh"> for the transaction on 23 Jul 2017</span>
+                                          </a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <span class="no-wrap"> 5 Jul 2017 </span>
+                                  </td>
+                                  <td class="mobile-hide-cell">
+                                      <span class="description">
+                                          Co-investment - TRAIN 4 LIMITED
+                                      </span>
+                                  </td>
+
+
+
+                                  <td class="numeric"> <span class="no-wrap"> -£6,857.13 </span> </td>
+
+                                  <td class="link-right">
+                                          <a title="View details for the transaction on 5 Jul 2017" href="/accounts/8MGY6M/balance/provider/summary?ukPrn=10038368&amp;fromDate=07%2F05%2F2017%2000%3A00%3A00&amp;toDate=07%2F05%2F2017%2023%3A59%3A59">
+                                              Details <span class="vh"> for the transaction on 5 Jul 2017</span>
+
+                                          </a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <span class="no-wrap"> 5 Jul 2017 </span>
+                                  </td>
+                                  <td class="mobile-hide-cell">
+                                      <span class="description">
+                                          Co-investment - BARNFIELD COLLEGE
+                                      </span>
+                                  </td>
+
+
+
+                                  <td class="numeric"> <span class="no-wrap"> -£266.66 </span> </td>
+
+                                  <td class="link-right">
+                                          <a title="View details for the transaction on 5 Jul 2017" href="/accounts/8MGY6M/balance/provider/summary?ukPrn=10000534&amp;fromDate=07%2F05%2F2017%2000%3A00%3A00&amp;toDate=07%2F05%2F2017%2023%3A59%3A59">
+                                              Details <span class="vh"> for the transaction on 5 Jul 2017</span>
+
+                                          </a>
+                                  </td>
+                              </tr>
+                      </tbody>
+                  </table>
+
+
+
+            </div>
+        </div>
+
+</div><!--end div for 3/4 size -->
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

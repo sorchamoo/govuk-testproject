@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li>Your transactions</li>
+
+        </ol>
+    </div>
+
+    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+
+    <a href="#" class="link-back" onClick="backAway()"> Back</a>
+
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-xlarge">
+            Finance
+        </h1>
+
+    </div>
+</div>
+
+<div class="grid-row">
+
+  <div class="column-one-half" style="background:#2F358B;float:left;width:45%;padding:10px;margin-right:10px;color:#ffffff;">
+    <span class="data-item bold-xlarge"  style="margin-bottom:100px">£2,000,000</span>
+    <span class="data-item bold-xsmall">Current levy funds</span>
+</div>
+    <div class="column-one-half" style="background:#E02F35;float:left;width:50%;padding:10px;color:#ffffff;">
+      <span class="data-item bold-xlarge" style="margin-bottom:100px">£20,000</span>
+      <span class="data-item bold-xsmall">Funds expiring August 2019</span>
+</div>
+
+  <div class="column-one-half" style="float:left;width:45%;padding:10px;margin-right:10px;">
+<h2 class="heading-medium"><a href="#">View transactions</a></h2>
+          <p>View payments made into and out of your SFA digital apprenticeship account
+          </p>
+        </div>
+
+        <div class="column-one-half" style="float:left;width:50%;padding:10px;">
+          <h2 class="heading-medium"><a href="#">View transactions</a></h2>
+                    <p>View payments made into and out of your SFA digital apprenticeship account
+                    </p>
+                  </div>
+
+
+</div> <!--end div for 3/4 size -->
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

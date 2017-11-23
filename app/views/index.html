@@ -6,21 +6,36 @@
 
 {% block content %}
 
+
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
         The GOV.UK prototype kit
+        <h2 class="heading-medium"> this runs on localhost:3000 \Documents\Test-proj\app\views </h2>
+        <p style="color:pink;"> PINK PINK PINK</p>
+
         <span class="heading-secondary">{{releaseVersion}}</span>
       </h1>{{releaseVersion | log }}
+      {% include "includes/thing.html" %}
+
       <p>
-        This SORCHA kit lets you rapidly create HTML prototypes of GOV.UK services.
+         This kit lets you rapidly create HTML prototypes of GOV.UK services.
       </p>
 
       <p>
+        asdfads
         It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
       </p>
+
+      <h2 class="heading-medium">Sorcha's prototypes</h2>
+      <p> Here are links to my prototypes.</p/>
+        <ul>
+          <li><a href="sorchatest\DCM-879-V2.html"> First Test Page DCM-879-V2</a> </li>
+          <li><a href="ILR\index.html">ILR index</a> </li>
+          <li><a href="financial-dashboard\index.html">Financial dashboard index</a> </li>
+        </ul>
 
       <h2 class="heading-medium">About this page</h2>
 

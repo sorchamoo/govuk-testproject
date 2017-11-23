@@ -1,0 +1,19 @@
+Download transactios page: 
+Add format options:
+csv
+excel
+osd
+
+
+indicating/highlighting refund on transactions page, payment details page, payment: apprentice details page
+
+
+
+Your transactions page: give a long list of tranactions spanning months
+with pagination
+
+pagination - like on manage apprentice page
+
+Add levy balance column: show effect of amounts coming in & out
+
+Non levy - go through what needs changing/non changing
