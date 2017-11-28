@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li>Your transactions</li>
+
+        </ol>
+    </div>
+
+    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+
+    <a href="#" class="link-back" onClick="backAway()"> Back</a>
+
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-xlarge">
+            Your transactions
+        <span class="heading-secondary">August 2017</span>
+        </h1>
+        <div class="grid-row">
+            <div class="column-full">
+
+              <form action="/action_page.php>
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <input type="radio" name="gender" value="male" checked> Male<br>
+ <input type="radio" name="gender" value="female"> Female<br>
+ <input type="radio" name="gender" value="other"> Other
+  <input type="submit" value="Submit">
+  </form>
+<!--
+                  <div class="page-navigation">
+                      <a class="previous" href="#">
+                          <i class="arrow-button fa fa-angle-left"></i>
+                          <span class="description">Previous <span class="hide-mob">page</span></span>
+                          <span class="counter">Page <span class="prevPage">1</span> of <span class="totalPage">10</span></span>
+                      </a>
+
+                      <a class="next" href="#">
+                          <i class="arrow-button fa fa-angle-right"></i>
+                          <span class="description">Next <span class="hide-mob">page</span></span>
+                          <span class="counter">Page <span class="nextPage">3</span> of <span class="totalPage">10</span></span>
+                      </a> end pagination -->
+                  </div>
+
+            </div>
+        </div>
+
+</div><!--end div for 3/4 size -->
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+// $path: "/public/images/";
+
+
+/* .unbranded {
+  background: $white;
+
+  // Use the universal selector and !important to *ALWAYS OVERRIDE* GDS Transport
+  * {
+
+    font-family: $toolkit-font-stack !important;
+  }
+  */
+  .vh {
+    display: none;
+  }
+
+/* table styles */
+  .highlighted-table-column {
+    text-align:center;
+    background-color:#dee0e2
+  }
+  th {
+    font-weight: 600 !important;
+  }
+
+  .total {
+    font-weight: 600;
+    border-bottom: 2px solid;
+  }
+
+  .total-empty {
+        border-bottom: hidden;
+  }
+  /* end table styles */
+
+  .bolding{
+    font-weight: 600;
+  }

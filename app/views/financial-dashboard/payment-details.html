@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs" id="js-breadcrumbs"><a href="#" class="link-back">Back</a></div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+            <h1 class="heading-xlarge">Payment details</h1>
+            <dl class="inline">
+                <p>Date <span class="bolding"> 15 Sep 2017</span><br />
+                Payment to <span class="bolding">TRAIN 4 LIMITED</span></p>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-full">
+        <table class="responsive" >
+            <thead>
+              <colgroup>
+                <col span="2">
+                <col span="2" class="highlighted-table-column">
+                <col span="2">
+              </colgroup>
+                <tr >
+                    <th colspan="2"></th>
+                    <th class="highlighted-table-column" scope="colgroup" colspan="2">Co-investment</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <th scope="col" class="tw-20">Course</th>
+                    <th scope="col" class="numeric tw-20">Paid from levy</th>
+                    <th scope="col" class="numeric tw-20 highlight">Government contribution</th>
+                    <th scope="col" class="numeric tw-20 highlight">Your contribution</th>
+                    <th scope="col" class="numeric tw-15" >Amount</th>
+                    <th scope="col" class="numeric tw-15" class="highlighted-table-column">Balance</th>
+                    <th scope="col" class="tw-5"><span class="vh">Action</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Course">Engineering Construction: Electrical Maintenance:  <span class="no-wrap">level 3</span></td>
+                    <td class="numeric" data-label="Paid from levy">&#8209;£2,057.13</td>
+                    <td class="numeric highlight" data-label="Government contribution">£0.00</td>
+                    <td class="numeric highlight" data-label="Your contribution">£0.00</td>
+                    <td class="numeric" data-label="Amount">&#8209;£2,057.13</td>
+                    <td class="numeric" data-label="Amount">&#8209;£20,057.13</td>
+                    <td><a title="View details of payment for Engineering Construction: Electrical Maintenance level 3" href="payment-apprentice-details.html">
+                            Details <span class="vh"> of payment for Engineering Construction: Electrical Maintenance level 3</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="Course">Systems engineering masters level:  <span class="no-wrap">level 7</span></td>
+                    <td class="numeric" data-label="Paid from levy">&#8209;£3,992.86</td>
+                    <td class="numeric highlight" data-label="Government contribution">&#8209;£726.43</td>
+                    <td class="numeric highlight" data-label="Your contribution">&#8209;£80.71</td>
+                    <td class="numeric" data-label="Amount">&#8209;£4,800.00</td>
+                    <td class="numeric" data-label="Amount">&#8209;£40,800.00</td>
+                    <td>
+
+
+                        <a title="View details of payment for Systems engineering masters level level 7" href="payment-apprentice-details.html">
+                            Details <span class="vh"> of payment for Systems engineering masters level level 7</span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td data-label="Totals" class="total-empty"> </td>
+                    <td data-label="Paid from levy" class="total numeric no-wrap">&#8209;£6,049.99</td>
+                    <td data-label="Government contribution" class="highlight total numeric no-wrap">&#8209;£726.43</td>
+                    <td data-label="Your contribution" class="highlight total numeric no-wrap">&#8209;£80.71</td>
+                    <td data-label="Amount" class="total numeric no-wrap">&#8209;£6,857.13</td>
+                      <td data-label="Amount" class="total numeric no-wrap">&#8209;£6,857.13</td>
+                    <td class="total-empty"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <br />
+        <div class="panel panel-top-margin">
+            <p>It's up to you and your training provider to decide when your contribution is paid.</p>
+        </div>
+    </div>
+</div>
+
+
+    </main>
+
+{% endblock %}
