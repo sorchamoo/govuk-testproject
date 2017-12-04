@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+        <div class="breadcrumbs">
+            <ol role="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="/accounts/8MGY6M/teams">Home</a></li>
+                <li><a href="/accounts/8MGY6M/balance">Your transactions</a></li>
+                <li>Levy details</li>
+            </ol>
+        </div>
+
+          <script>
+              function backAway(){
+                  //if it was the first page
+                  if(history.length === 1){
+                      window.location = "http://www.mysite.com/"
+                  } else {
+                      history.back();
+                  }
+              }
+          </script>
+        <a href="#" class="link-back" onClick="backAway()"> Back</a>
+
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">Levy</h1>
+            <p>Date <b>23 September 2017</b></p>
+        </div>
+    </div>
+    <div class="grid-row">
+        <div class="column-full">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="th-ps" scope="col">PAYE scheme</th>
+                        <th id="th-pd" scope="col">Payroll date</th>
+                        <th id="th-ld" class="numeric" scope="col">Levy paid to HMRC</th>
+                        <th id="th-ef" class="numeric" scope="col"><span class="nowrap">English %</span></th>
+                        <th id="th-tu" class="numeric" scope="col">10% Top up</th>
+                        <th id="th-pi" class="numeric" scope="col">Your funds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr class="responsive-tr">
+                            <td headers="th-ps">
+                                <span>100/GDS00010</span>
+                                <span></span>
+                            </td>
+                            <td headers="th-pd">
+                               Aug 2017
+                            </td>
+                            <td headers="th-ld" class="numeric">
+                                £5,500.00
+                            </td>
+                            <td headers="th-ef" class="numeric">
+                                <span class="nowrap">100.000 %</span>
+                            </td>
+                            <td headers="th-tu" class="numeric">
+                                £550.00
+                            </td>
+                            <td headers="th-pi" class="numeric">
+                                £6,050.00
+                            </td>
+                        </tr>
+                    <tr class="total">
+                        <th scope="row" colspan="5" id="th-total"><span class="vh">Total</span></th>
+                        <td class="numeric" headers="th-total"><span class="bolding">£6,050.00</bolding></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <details id="inform-english-percentage">
+        <summary><span class="summary">What is English percentage?</span></summary>
+        <div class="panel">
+            <p>Your English percentage is provided by HMRC based on the data in your payroll submissions. It represents the proportion of your payroll that's paid to your employees that live in England.</p>
+            <p>If you think there are any issues with your English percentage, check your payroll data to make sure your employees' address information is correct.</p>
+        </div>
+    </details>
+            <div class="panel panel-border-wide panel-filled-purple panel-top-margin">
+                <p><a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/employer-enquiries" target="_blank">Contact HMRC</a> if the levied amount isn't what you expected. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+        </main>
+
+
+
+
+    </main>
+
+{% endblock %}
