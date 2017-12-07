@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs" id="js-breadcrumbs"><a href="#" class="link-back">Back</a></div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup">
+            <h1 class="heading-xlarge">Payment details</h1>
+            <dl class="inline">
+                <p>Date <span class="bolding"> 05 May 2018</span><br />
+                Payment to <span class="bolding">A1 Provider Ltd</span></p>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-full">
+        <table class="responsive" >
+            <thead>
+              <colgroup>
+                <col span="2">
+                <col span="2" class="highlighted-table-column">
+                <col span="2">
+              </colgroup>
+                <tr >
+                    <th colspan="2"></th>
+                    <th class="highlighted-table-column" scope="colgroup" colspan="2">Co-investment</th>
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <th scope="col" class="tw-20">Course</th>
+                    <th scope="col" class="numeric tw-20">Paid from levy</th>
+                    <th scope="col" class="numeric tw-20 highlight">Government contribution</th>
+                    <th scope="col" class="numeric tw-20 highlight">Your contribution</th>
+                    <th scope="col" class="numeric tw-15">Amount</th>
+                    <th scope="col" class="tw-5"><span class="vh">Action</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Course">Digital Marketing <span class="no-wrap">level 3</span></td>
+                    <td class="numeric" data-label="Paid from levy">&#8209;£5,33.34</td>
+                    <td class="numeric highlight" data-label="Government contribution">£0.00</td>
+                    <td class="numeric highlight" data-label="Your contribution">£0.00</td>
+                    <td class="numeric" data-label="Amount">&#8209;£5,33.34</td>
+                    <td><a title="View details of payment for Digital Design Level 3" href="payment-apprentice-details-A1.html">
+                            Details <span class="vh"> of payment for Digital Design Level 3</span>
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td data-label="Totals" class="total-empty"> </td>
+                    <td data-label="Paid from levy" class="total numeric no-wrap">&#8209;£5,33.34</td>
+                    <td data-label="Government contribution" class="highlight total numeric no-wrap">£0.00</td>
+                    <td data-label="Your contribution" class="highlight total numeric no-wrap">£0.00</td>
+                    <td data-label="Amount" class="total numeric no-wrap">&#8209;£5,33.34</td>
+                    <td class="total-empty"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+          <br>
+        <div class="panel panel-top-margin">
+            <p>It's up to you and your training provider to decide when your contribution is paid.</p>
+        </div>
+    </div>
+</div>
+
+
+    </main>
+
+{% endblock %}

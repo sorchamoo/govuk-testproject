@@ -12,9 +12,32 @@
     font-family: $toolkit-font-stack !important;
   }
   */
+
   .vh {
     display: none;
   }
+
+  /*OR icon */
+  #OR {
+    height: 0;
+  }
+
+  #OR:after {
+    content: "OR";
+    position: relative;
+    width: 0px;
+    top: 140px;
+    left: -120px;
+    display: inline;
+    background: gray;
+    border-radius: 20px;
+    padding: 6px 6px 4px 6px;
+    color: white;
+    font-weight: 900;
+    line-height: normal;
+  }
+  /* end OR */
+
 
 /* table styles */
   .highlighted-table-column {
