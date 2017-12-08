@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+ {% extends "layout.html" %}
 
 {% block page_title %}
   GOV.UK prototype kit
@@ -34,7 +34,9 @@
 <div class="grid-row">
     <div class="column-full">
         <h1 class="heading-xlarge">
-          Emory Elliston: Payment details 05 May 2018
+          Emory Elliston
+          <br>
+          <span class="heading-large">Payment details 05 May 2018</span>
         </h1>
 
     </div>
@@ -169,37 +171,22 @@
 </details>
 
 <!--start pagination -->
-                  <div class="page-navigation">
-                      <a class="previous" href="#">
-                          <i class="arrow-button fa fa-angle-left"></i>
-                          <span class="description">Previous <span class="hide-mob">month</span></span>
-                          <span class="detail">October 2017</span>
-                      </a>
-
-                      <a class="next" href="#">
-                          <i class="arrow-button fa fa-angle-right"></i>
-                          <span class="description">Next <span class="hide-mob">page</span></span>
-                          <span class="counter">Page <span class="nextPage">3</span> of <span class="totalPage">10</span></span>
-                      </a>
-                  </div>
-<!--end pagination -->
-
-<ul class="previous-next-navigation">
+                  <ul class="previous-next-navigation">
                 <li class="previous">
-                    <a href="/accounts/8MGY6M/balance/2017/10">
+                    <a href="#">
                         Previous <span class="hide-mobile">month</span>
                         <span class="detail">October 2017</span>
                     </a>
                 </li>
-                            <li class="next">
-                    <a href="/accounts/8MGY6M/balance/2017/12">
+                      <!--      <li class="next">
+                    <a href="#">
                         Next month
                         <span class="detail">December 2017</span>
 
                     </a>
                 </li>
-        </ul>
-
+        </ul> -->
+<!--end pagination -->
 </div> <!--end div for 3/4 size -->
     </div>
 </div>
