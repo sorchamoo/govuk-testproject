@@ -1,0 +1,29 @@
+Sender:
+Outline your agreement - DELETE
+COnfirm detais - remove money, and remove outline of what has been agreed
+
+
+Receiver:
+Confirm funding employer - remove remove money, and remove outline of what has been agreed
+
+Connection made: remove "I have a cohort ready to request" - option  are  "i want to create a cohort" or "no I'l do it later"- then go to How will you pay"
+
+REmove "choose orgnisation"
+Remove "agreement not signed"
+
+restart at: Start adding apprentices
+
+Go to How will you pay your training provider? How will you pay your training provider?
+Fund by tranfer? Yes or no
+If yes then go to By which transfer wil you pay your training provider? > continue
+State Aid - leave blank . then go to "Add an apprentice journey" (10003375
+Review your cohort Screen:
+
+
+Your transfer request (remove state aid) (remove options) replace with button" send request
+Under apprenticheship: 
+engineering: 6
+software dev: 9
+Estimates total transfer value
+
+Your Co-hort requests >

@@ -1,0 +1,641 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li>Your transactions</li>
+
+        </ol>
+    </div>
+
+<!--    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+
+    <a href="#" class="link-back" onClick="backAway()"> Back</a>
+
+    <main class="finance-transactions-expanded" id="content" role="main" tabindex="-1">
+        <a href="#" class="link-back">Back</a> -->
+
+
+
+
+
+    <div class="grid-row">
+            <div class="column-two-thirds">
+                <div class="hgroup">
+                <h1 class="heading-xlarge">Your transactions</h1>
+                    <p class="lede">A record of payments made to and from your levy balance.</p>
+
+<!--start of hidden content -->
+
+<!-- end hidden content -->
+
+  <!--                  <a href="#" class="excel button secondary" data-clipboard-target="#copyTable">Copy this data to a spreadsheet</a> -->
+                </div>
+            </div>
+    </div>
+
+            <div class="grid-row" data-module="highlight-active-section-heading">
+    		<div id="transactions-aside">
+    			<!--  Page contents -->
+    			<nav aria-label="skip to job profile" class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 198px;">
+    				<h2 class="page-contents__title">Skip to month:</h2>
+    				<ul class="page-contents__list">
+              <li><a href="#may18" class="">May 18</a></li>
+    					<li><a href="#april18" class="">April 18</a></li>
+              <li><a href="#march18" class="">March 18</a></li>
+              <li><a href="#february18" class="">February 18</a></li>
+              <li><a href="#january18" class="">January 18</a></li>
+              <li><a href="#december17" class="">December 17</a></li>
+    					<li><a href="#november17" class="">November 17</a></li>
+    	                <li><a href="#october17" class="">October 17</a></li>
+    	                <li><a href="#september17" class="">September 17</a></li>
+    					<li><a href="#august17" class="">August 17</a></li>
+    	                <li><a href="#july17" class="">July 17</a></li>
+    	                <li><a href="#june17" class="">June 17</a></li>
+    	                <li><a href="#may17" class="">May 17</a></li>
+    		            <li><a href="#april17">April 17</a></li>
+    		            <li><a href="#march17">March 17</a></li>
+
+    				</ul>
+                    <br>
+    				<h2 class="page-contents__title">Skip to year:</h2>
+                    <ul class="page-contents__list">
+    		            <li><a href="#may18">2018</a></li>
+    		            <li><a href="#december17">2017</a></li>
+                    </ul>
+    			</nav>
+    		</div>
+
+                <div id="transaction-wrapper">
+
+                    <div id="transaction-header" class="row">
+                        <div class="date">Date</div>
+                        <div class="description">Description</div>
+                        <div class="amount">Amount</div>
+                        <div class="amount">Balance</div>
+                        <div class="details">&nbsp;</div>
+                    </div>
+                    <div id="transaction-rows">
+                      <div id="may18">
+                        <div class="row levy" id="transferSender">
+                              <div class="date">23 May 18</div>
+                              <div class="description">Levy</div>
+                              <div class="amount"> £235,062.12 </div>
+                              <div class="balance"> £2,735,847.65</div>
+                              <div class="details"><a href="levy-details.html">Details</a></div>
+                          </div>
+                          <div class="row levy" id="transferSender">
+                                <div class="date">05 May 18</div>
+                                <div class="description">B2 Provider Ltd</div>
+                                <div class="amount">&#8209;£5,333.28 </div>
+                                <div class="balance">£2,500,785.53 </div>
+                                <div class="details"><a href="payment-details-B2-provider.html">Details</a></div>
+                            </div>
+                          <div class="row non-levy" id="transferReceiver">
+                              <div class="date">05 May 18</div>
+                              <div class="description">A1 Provider Ltd </div>
+                              <div class="amount"> &#8209;£533.34</div>
+                              <div class="balance">£2,506,118.81</div>
+                              <div class="details"><a href="payment-details-A1-provider.html">Details</a></div>
+                          </div>
+                          <div class="row levy">
+                              <div class="date">05 May 18</div>
+                              <div class="description">Levy Transfer - Good Supplier Ltd</div>
+                              <div class="amount">&#8209;£2,123.23 </div>
+                              <div class="balance">£2,506,652.15 </div>
+                              <div class="details"><a href="#">Details</a></div>
+                          </div>
+                        </div>
+                        <div id="april18">
+                        <div class="row levy" id="transferSender">
+                              <div class="date">23 April 18</div>
+                              <div class="description">Levy</div>
+                              <div class="amount"> £235,062.12 </div>
+                              <div class="balance">£2,508,775.38</div>
+                              <div class="details"><a href="levy-transfer-out.html">Details</a></div>
+                          </div>
+                          <div class="row non-levy" id="transferReceiver">
+                              <div class="date">05 April 18</div>
+                              <div class="description">B2 Provider Ltd</div>
+                              <div class="amount"> &#8209;£5,333.28 </div>
+                              <div class="balance">£2,273,713.26 </div>
+                              <div class="details"><a href="payment-details-transfer.html">Details</a></div>
+                          </div>
+                          <div class="row levy">
+                              <div class="date">05 April 18</div>
+                              <div class="description">A1 Provider Ltd</div>
+                              <div class="amount">  &#8209;£533.34 </div>
+                              <div class="balance">£2,279,046.54 </div>
+                              <div class="details"><a href="#">Details</a></div>
+                          </div>
+                        </div>
+                      <div id="march18">
+                        <div class="row levy" id="transferSender">
+                              <div class="date">23 March 18</div>
+                              <div class="description">Levy</div>
+                              <div class="amount">£235,062.12 </div>
+                              <div class="balance">£2,279,579.88</div>
+                              <div class="details"><a href="levy-transfer-out.html">Details</a></div>
+                          </div>
+                          <div class="row non-levy" id="transferReceiver">
+                              <div class="date">05 March 18</div>
+                              <div class="description">B2 Provider Ltd</div>
+                              <div class="amount"> &#8209;£5,333.28</div>
+                              <div class="balance">£2,044,517.76</div>
+                              <div class="details"><a href="payment-details-transfer.html">Details</a></div>
+                          </div>
+                          <div class="row levy">
+                              <div class="date">05 March 18</div>
+                              <div class="description">A1 Provider Ltd</div>
+                              <div class="amount">  &#8209;£533.34</div>
+                              <div class="balance">£2,049,851.04</div>
+                              <div class="details"><a href="#">Details</a></div>
+                          </div>
+                        </div>
+                      <div id="february18">
+                        <div class="row levy" id="transferSender">
+                              <div class="date">23 February 18</div>
+                              <div class="description">Levy</div>
+                              <div class="amount"> £235,062.12 </div>
+                              <div class="balance">£2,050,384.38</div>
+                              <div class="details"><a href="levy-transfer-out.html">Details</a></div>
+                          </div>
+                          <div class="row non-levy" id="transferReceiver">
+                              <div class="date">05 February 18</div>
+                              <div class="description">B2 Provider Ltd</div>
+                              <div class="amount"> &#8209;£5333.28</div>
+                              <div class="balance">£1,815,322.26</div>
+                              <div class="details"><a href="payment-details-transfer.html">Details</a></div>
+                          </div>
+                          <div class="row levy">
+                              <div class="date">05 February 18</div>
+                              <div class="description">A1 Provider Ltd</div>
+                              <div class="amount">  &#8209;£533.34 </div>
+                              <div class="balance">£1,820,655.54</div>
+                              <div class="details"><a href="#">Details</a></div>
+                          </div>
+                      </div><div id="january18">
+                        <div class="row levy" id="transferSender">
+                              <div class="date">23 January 18</div>
+                              <div class="description">Levy</div>
+                              <div class="amount">£235,062.12</div>
+                              <div class="balance">£1,821,188.88 </div>
+                              <div class="details"><a href="levy-transfer-out.html">Details</a></div>
+                          </div>
+                          <div class="row non-levy" id="transferReceiver">
+                              <div class="date">05 January 18</div>
+                              <div class="description">B2 Provider Ltd</div>
+                              <div class="amount"> &#8209;£5,333.28 </div>
+                              <div class="balance">£1,586,126.76 </div>
+                              <div class="details"><a href="payment-details-transfer.html">Details</a></div>
+                          </div>
+                          <div class="row levy">
+                              <div class="date">05 January 18</div>
+                              <div class="description">A1 Provider Ltd</div>
+                              <div class="amount">  &#8209;£533.34 </div>
+                              <div class="balance">£1,591,460.04 </div>
+                              <div class="details"><a href="#">Details</a></div>
+                          </div>
+                      </div>
+                      <div id="december17">
+                        <div class="row levy" id="transferSender">
+                              <div class="date">23 December 17</div>
+                              <div class="description">Levy</div>
+                              <div class="amount">£234,988.43</div>
+                              <div class="balance">£1,591,993.38</div>
+                              <div class="details"><a href="levy-transfer-out.html">Details</a></div>
+                          </div>
+                          <div class="row non-levy" id="transferReceiver">
+                              <div class="date">05 December 17</div>
+                              <div class="description">B2 Provider Ltd</div>
+                              <div class="amount"> &#8209;£5,333.28 </div>
+                              <div class="balance">£1,357,004.95</div>
+                              <div class="details"><a href="payment-details-transfer.html">Details</a></div>
+                          </div>
+                          <div class="row levy">
+                              <div class="date">05 December 17</div>
+                              <div class="description">A1 Provider Ltd</div>
+                              <div class="amount"> &#8209;£533.34</div>
+                              <div class="balance">£1,362,338.23</div>
+                              <div class="details"><a href="#">Details</a></div>
+                          </div>
+                      </div>
+                        <div id="november17">
+                            <div class="row levy">
+                                <div class="date">23 November 17</div>
+                                <div class="description">Levy funds</div>
+                                <div class="amount">&#8209;£12,399.34</div>
+                                <div class="balance">£1,362,871.57</div>
+                                <div class="details"><a href="#">Details</a></div>
+
+                            </div>
+                            <div class="row levy" id="transferSender">
+                                <div class="date">05 November 17</div>
+                                <div class="description">B2 Provider Ltd</div>
+                                <div class="amount">-£5,333.28</div>
+                                <div class="balance">£1,375,270.91</div>
+                                <div class="details"><a href="levy-transfer-out.html">Details</a></div>
+                            </div>
+                            <div class="row non-levy" id="transferReceiver">
+                                <div class="date">05 November 17</div>
+                                <div class="description">A1 Provider Ltd (Refund)</div>
+                                <div class="amount"> &#8209;£266.67</div>
+                                <div class="balance">£1,380,604.19</div>
+                                <div class="details"><a href="payment-details-transfer.html">Details</a></div>
+                            </div>
+                        </div>
+                        <div id="october17">
+                            <div class="row levy">
+                                <div class="date">23 October 17</div>
+                                <div class="description">Levy </div>
+                                <div class="amount">£235,062.12 </div>
+                                <div class="balance">£1,380,870.86</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 October 17</div>
+                                <div class="description">B2 Provider Ltd</div>
+                                <div class="amount"> &#8209;£5,333.28</div>
+                                <div class="balance">£1,145,808.74</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 October 17</div>
+                                <div class="description">A1 Provider Ltd </div>
+                                <div class="amount"> &#8209;£533.34</div>
+                                <div class="balance">£1,151,142.02</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            </div>
+                          <div id="september17">
+                            <div class="row levy">
+                                <div class="date">23 September 17</div>
+                                <div class="description">Levy</div>
+                                <div class="amount">£239,344.21</div>
+                                <div class="balance">£1,151,675.36</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 September 17</div>
+                                <div class="description">B1 Provider Ltd</div>
+                                <div class="amount"> &#8209;£5,333.28</div>
+                                <div class="balance">£912,331.15</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 September 17</div>
+                                <div class="description">A1 Provider Ltd</div>
+                                <div class="amount"> &#8209;£533.34</div>
+                                <div class="balance">£917,664.43</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                          </div>
+                          <div id="august17">
+                            <div class="row levy">
+                                <div class="date">23 August 17</div>
+                                <div class="description">Levy</div>
+                                <div class="amount">£234,572.32</div>
+                                <div class="balance">£918,197.77</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 August 17</div>
+                                <div class="description">B2 Provider Ltd</div>
+                                <div class="amount"> &#8209;£5,333.28 </div>
+                                <div class="balance">£683,625.45</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 August 17</div>
+                                <div class="description">A1 Provider Ltd </div>
+                                <div class="amount">&#8209;£533.34</div>
+                                <div class="balance">£688,958.73</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                          </div>
+                          <div id="july17">
+                            <div class="row levy">
+                                <div class="date">23 July 17</div>
+                                <div class="description">Levy</div>
+                                <div class="amount">£235,991.76</div>
+                                <div class="balance">£689,492.07</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+
+
+                            <div class="row levy">
+                                <div class="date">05 July 17</div>
+                                <div class="description">B2 Provider Ltd</div>
+                                <div class="amount"> &#8209;£5,333.28</div>
+                                <div class="balance">£453,500.31</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 July 17</div>
+                                <div class="description">A1 Provider Ltd </div>
+                                <div class="amount"> &#8209;£533.34</div>
+                                <div class="balance">£458,833.59</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                          </div>
+                        <div id="june17">
+                            <div class="row levy">
+                                <div class="date">23 June 17</div>
+                                <div class="description">Levy</div>
+                                <div class="amount">£234,851.21</div>
+                                <div class="balance">£459,366.93</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 June 17</div>
+                                <div class="description">B2 Provider Ltd</div>
+                                <div class="amount"> &#8209;£5,333.28</div>
+                                <div class="balance">£224,515.72</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                            <div class="row levy">
+                                <div class="date">05 June 17</div>
+                                <div class="description">A1 Provider Ltd </div>
+                                <div class="amount"> &#8209;£533.34</div>
+                                <div class="balance">£229,849.00</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                          </div>
+                        <div id="may17">
+                            <div class="row levy">
+                                <div class="date">23 May 17</div>
+                                <div class="description">Levy funds</div>
+                                <div class="amount">£230,382.34</div>
+                                <div class="balance">£230,382.34</div>
+                                <div class="details"><a href="#">Details</a></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+
+        <table id="copyTable" style="position: absolute; top: 0; left: 100%;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="no-wrap">Date</span></th>
+                            <th scope="col" class="mobile-hide-cell">Description</th>
+                            <th scope="col" class="numeric">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>                   <tr>
+                                <td>
+                                    <span class="no-wrap"> 22 Apr 2017 </span>
+                                </td>
+                                <td class="mobile-hide-cell">
+                                    <span class="description">
+                                        Levy funds
+                                    </span>
+                                </td>
+                                <td class="numeric">£2,178.00</td>
+                            </tr>
+                    </tbody>
+                </table>
+
+
+    </main>
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

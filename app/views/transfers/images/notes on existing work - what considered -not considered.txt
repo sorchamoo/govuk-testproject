@@ -14,7 +14,7 @@ Do we need a stripped back version for non levy?
 Like an agreement - can the receiver be removed from the sponsor?
  employer's apprenticeship account ID
 Payments are done on a plan - and listed in a monthly format: https://preview.uxpin.com/8c207f77f6076fd266a8e35b2098c8bd414e234f#/pages/78039775/simulate/sitemap 
-How might a payment "fail"
+How might a payment "fail" https://das-mya-beta.herokuapp.com/sprint/48/account/apprentices/ann-smith
  schedule of expected monthly transfers
 How will multiple sender or receiver transfers work? https://preview.uxpin.com/5ad876e0c5707cfae7500a9ca85eff86fceb626d#/pages/78040414/simulate/sitemap
 

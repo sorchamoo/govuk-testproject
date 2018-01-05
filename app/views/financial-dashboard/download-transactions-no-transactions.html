@@ -1,0 +1,148 @@
+5{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li>Your transactions</li>
+
+        </ol>
+    </div>
+
+    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+
+    <a href="#" class="link-back" onClick="backAway()"> Back</a>
+
+<div class="grid-row">
+
+    <div class="column-full">
+
+      <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+          <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+            There are no transactions in the date range
+          </h2>
+
+        <!--   <p>
+            Optional description of the errors and how to correct them
+          </p>
+
+         <ul class="error-summary-list">
+            <li><a href="#start-date">Enter a different start date</a></li>
+            <li><a href="#end-date">Enter a different end date</a></li>
+          </ul> -->
+
+        </div>
+
+
+
+        <h1 class="heading-xlarge">
+            Download transactions
+        </h1>
+      </div> <!-- end full width div -->
+          <div class="column-one-half">
+<p>Enter a start and end date to download transactions within a specific date range.</p>
+
+
+    <form>
+
+                           <div class="form-group form-group-error">
+                               <fieldset>
+                                   <legend>
+                                       <span class="form-label-bold" id="start-date">Start date
+           </span>
+                                       <span class="form-hint">For example, 5 2017</span>
+                                   </legend>
+                                   <div class="form-date">
+                                       <div class="form-group form-group-month">
+                                           <label class="form-label" for="dob-month">Month</label>
+                                           <input class="form-control" value="01" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                                       </div>
+                                       <div class="form-group form-group-year">
+                                           <label class="form-label" for="dob-year">Year</label>
+                                           <input class="form-control" value="2018"id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                                       </div>
+                                   </div>
+                               </fieldset>
+                                 <span class="error-message">Enter a different start date</span>
+                           </div>
+                       </form>
+
+                       <div class="form-group form-group-error">
+                           <fieldset>
+                               <legend>
+                                   <span class="form-label-bold" id="end-date">End date
+       </span>
+                                   <span class="form-hint">For example, 10 2017</span>
+                               </legend>
+                               <div class="form-date">
+                                   <div class="form-group form-group-month">
+                                       <label class="form-label" for="dob-month">Month</label>
+                                       <input class="form-control" value="01"id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                                   </div>
+                                   <div class="form-group form-group-year">
+                                       <label class="form-label" for="dob-year">Year</label>
+                                       <input class="form-control" value="2018" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                                   </div>
+                               </div>
+                           </fieldset>
+                             <span class="error-message">Enter a different end date</span>
+                       </div>
+                   </form>
+
+                   <div class="form-group">
+  <label class="form-label" for="select-box">Select format</label>
+  <select class="form-control" id="select-box" name="select-box">
+   <option>CSV</option>
+ <option>CSV</option>
+    <option>Excel</option>
+    <option>OSD</option>
+  </select>
+</div>
+
+                   <input class="button" type="submit" value="Download">
+
+
+</div><!--end div for 1/2 size -->
+<div id="OR"></div>
+<div class="column-one-half"><!--end div for 2nd 1/2 size -->
+
+  <p style="padding-top: 25%">Download all transactions to date.</p>
+  <div class="form-group">
+<label class="form-label" for="select-box">Select format</label>
+<select class="form-control" id="select-box" name="select-box">
+<option>Please select field</option>
+<option>CSV</option>
+<option>Excel</option>
+<!--    <option>OSD</option> -->
+</select>
+</div>
+   <input class="button" type="submit" value="Download all transactions"></a>
+
+</div> <!--end div for 2nd 1/2 size -->
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

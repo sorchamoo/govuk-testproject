@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+<div class="breadcrumbs">
+    <ol role="navigation">
+        <li><a href="https://demo-eas.apprenticeships.sfa.bis.gov.uk/accounts/8MGY6M/teams/">Home</a></li>
+        <li>Apprentices</li>
+    </ol>
+</div>
+
+
+<form method="POST" action="/commitments/accounts/8MGY6M/apprentices/legalEntity/create">
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-xlarge heading-dashboard">Apprentices</h1>
+    </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="grid-row">
+            <div class="column-half ">
+                <h2 class="heading-medium"><a href="/commitments/accounts/8MGY6M/apprentices/Inform">Add an apprentice</a></h2>
+                <p class="rj-home-spacer">Add apprentices to a new cohort or ask your training provider to add them.</p>
+                <hr>
+            </div>
+            <div class="column-half ">
+                <h2 class="heading-medium"><a href="your-cohorts.html">Your cohorts</a></h2>
+                <p class="rj-home-spacer">Review, edit, approve and add more apprentices to cohorts you’ve already started.</p>
+                <hr>
+            </div>
+
+            <div class="column-half">
+                <h2 class="heading-medium">
+                    <a href="/commitments/accounts/8MGY6M/apprentices/manage/all">Manage your apprentices</a>
+                </h2>
+                <p class="rj-home-spacer">
+                    View approved apprentices, update details of existing apprentices or stop and pause payments to training providers.
+                </p>
+                <hr>
+            </div>
+                <div class="column-half">
+                    <h2 class="heading-medium">
+                        <a href="/commitments/accounts/8MGY6M/apprentices/manage/paymentorder">Set payment order</a>
+                    </h2>
+                    <p class="rj-home-spacer">
+                        View and change the order in which your providers are paid from your available funds.
+                    </p>
+                    <hr>
+                </div>
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+
+
+</main>
+
+{% endblock %}

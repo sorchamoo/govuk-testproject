@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+  <div class="column-full">
+
+                <h1 class="heading-xlarge" id="Levy-accounts">Your accounts</h1>
+                <p>Select an account or add a new one.</p>
+                <table class="responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="tw-30">Account name</th>
+                            <th scope="col">What you can do</th>
+                            <th scope="col"><span class="vh">Select account</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td data-label="Account name">
+                                    <span class="force-word-wrap">
+                                        APEX ELECTRICAL ENGINEERS LIMITED
+                                    </span>
+                                    <span class="account-id">
+                                        Account ID: 8MGY6M
+                                    </span>
+                                </td>
+                                <td data-label="What you can do">
+                                    Accept agreements, view information and manage PAYE schemes, organisations, apprentices and team members
+                                </td>
+                                <td class="link-right">
+                                    <a aria-label="View account homepage for APEX ELECTRICAL ENGINEERS LIMITED" title="View account homepage for APEX ELECTRICAL ENGINEERS LIMITED" href="apex.html">
+                                        Open<span class="vh"> APEX ELECTRICAL ENGINEERS LIMITED account homepage</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Account name">
+                                    <span class="force-word-wrap">
+                                        TESCO PLC
+                                    </span>
+                                    <span class="account-id">
+                                        Account ID: XVJX9V
+                                    </span>
+                                </td>
+                                <td data-label="What you can do">
+                                    Accept agreements, view information and manage PAYE schemes, organisations, apprentices and team members
+                                </td>
+                                <td class="link-right">
+                                    <a aria-label="View account homepage for TESCO PLC" title="View account homepage for TESCO PLC" href="/accounts/XVJX9V/teams">
+                                        Open<span class="vh"> TESCO PLC account homepage</span>
+                                    </a>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <a href="/accounts/organisations/search" class="button" id="add_new_account" aria-label="Add new account">Add new account</a>
+                </p>
+
+
+
+            </div>
+
+    </main>
+
+{% endblock %}

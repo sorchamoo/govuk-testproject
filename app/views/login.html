@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <a href="/" class="link-back">Back</a>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">Sign in</h1>
+            <p>Sign in or <a href="/account/register?ClientId=easdemo&amp;ReturnUrl=https%3A%2F%2Fdemo-login.apprenticeships.sfa.bis.gov.uk%2Fidentity%2Fconnect%2Fauthorize%3Fclient_id%3Deasdemo%26response_type%3Dcode%26scope%3Dopenid%2520profile%26redirect_uri%3Dhttps%253A%252F%252Fdemo-eas.apprenticeships.sfa.bis.gov.uk%252Fservice%252FsignIn%26state%3D41e5753caeba41f5b83e10bbc7f5632a%26nonce%3Dc2b80a372b184f398d7c5c2b44f44933">create an account</a> to manage your apprenticeship funds.</p>
+
+            <form method="GET" action="your-accounts.html"> <!-- autocomplete="off" id="form-signin"> -->
+
+                <input name="__RequestVerificationToken" type="hidden" value="ttPh_isZsJasDGxPM7aje2mkU1qXuA9jHOv3BgbQkn_Z2Jhi9oWFQErOG6HAEwNZ5eJHheeFv_zD2TPxZmwoF0Kwt201">
+                <div class="form-group  ">
+                    <label for="EmailAddress">
+                        <span class="form-label-bold">Email address</span>
+                    </label>
+                    <input class="form-control form-control-3-4" id="EmailAddress" name="EmailAddress" type="text" autocomplete="off" autofocus="autofocus" aria-required="true">
+                </div>
+                <div class="form-group ">
+                    <label for="Password">
+                        <span class="form-label-bold">
+                            Password
+                        </span>
+                    </label>
+                    <input class="form-control form-control-3-4" id="Password" name="Password" type="password" autocomplete="off" aria-required="true">
+
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button" id="button-signin">Sign in</button>
+                </div>
+            </form>
+            <p>
+                <a href="your-accounts.html">Forgotten your password?</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    </main>
+
+{% endblock %}

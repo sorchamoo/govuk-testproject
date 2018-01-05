@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="/accounts/8MGY6M/teams">Home</a></li>
+            <li>Your organisations and agreements</li>
+        </ol>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid-row header-index">
+    <div class="column-two-thirds">
+        <h1 class="heading-xlarge">Your organisations and agreements</h1>
+    </div>
+    <div class="column-one-third">
+        <form action="/accounts/8MGY6M/organisations/search" method="GET">
+            <input class="button action-add" id="addNewOrg" type="submit" value="Add new organisation">
+        </form>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-two-thirds">
+        <p>Add each organisation that will contract with your training providers.</p>
+        <p>There is no restriction on the number of <a href="https://www.gov.uk/government/publications/employment-allowance-more-detailed-guidance" target="_blank" rel="external">connected organisations</a> you can add.</p>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="column-full">
+        <table class="organisations">
+            <thead>
+                <tr>
+                    <th scope="col">Organisation</th>
+                    <th scope="col">Agreement</th>
+                    <th scope="col">Spending status</th>
+                    <th scope="col"><span class="vh">Action</span></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                    <tr>
+                        <td>APEX ELECTRICAL ENGINEERS LIMITED</td>
+                        <td>
+                                 Signed by Test GDSAssessment
+                                    <span class="secondary-text">Signed on: 07/09/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/PVPD7V/details" title="View agreement for APEX ELECTRICAL ENGINEERS LIMITED">View <span class="vh">agreement for APEX ELECTRICAL ENGINEERS LIMITED</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GERARD LIMITED</td>
+                        <td>
+                                 Signed by Gerard Finegan
+                                    <span class="secondary-text">Signed on: 24/10/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/XVJ7DM/details" title="View agreement for GERARD LIMITED">View <span class="vh">agreement for GERARD LIMITED</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apex Primary School</td>
+                        <td>
+                                 Signed by Pritesh Patel
+                                    <span class="secondary-text">Signed on: 07/11/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/M6P46M/details" title="View agreement for Apex Primary School">View <span class="vh">agreement for Apex Primary School</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>APEX LEICESTER PROJECT LIMITED</td>
+                        <td>
+                                 Signed by Pritesh Patel
+                                    <span class="secondary-text">Signed on: 09/11/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/VRBK4V/details" title="View agreement for APEX LEICESTER PROJECT LIMITED">View <span class="vh">agreement for APEX LEICESTER PROJECT LIMITED</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Common Services Agency of the Scottish Health Service (NHS National Services Scotland Board)</td>
+                        <td>
+                                 Signed by Pritesh Patel
+                                    <span class="secondary-text">Signed on: 17/11/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/VBBJLV/details" title="View agreement for Common Services Agency of the Scottish Health Service (NHS National Services Scotland Board)">View <span class="vh">agreement for Common Services Agency of the Scottish Health Service (NHS National Services Scotland Board)</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>RAYMOND BROWN LTD</td>
+                        <td>
+                                 Signed by Frank Harkin
+                                    <span class="secondary-text">Signed on: 19/12/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/V6PP4V/details" title="View agreement for RAYMOND BROWN LTD">View <span class="vh">agreement for RAYMOND BROWN LTD</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>RAYMOND BROWN LTD</td>
+                        <td>
+                                 Agreement not signed
+                                <span class="secondary-text">Agreement needs to be signed</span>
+                        </td>
+                        <td>
+                            Spending disabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/MRBBBM/about-your-agreement" title="View agreement for RAYMOND BROWN LTD">View agreement <span class="vh">for RAYMOND BROWN LTD</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>KNIGHTS BROWN LTD</td>
+                        <td>
+                                 Agreement not signed
+                                <span class="secondary-text">Agreement needs to be signed</span>
+                        </td>
+                        <td>
+                            Spending disabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/MYJJGV/about-your-agreement" title="View agreement for KNIGHTS BROWN LTD">View agreement <span class="vh">for KNIGHTS BROWN LTD</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ABC International School</td>
+                        <td>
+                                 Agreement not signed
+                                <span class="secondary-text">Agreement needs to be signed</span>
+                        </td>
+                        <td>
+                            Spending disabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/MN447M/about-your-agreement" title="View agreement for ABC International School">View agreement <span class="vh">for ABC International School</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>TRAINING COMPANY OF DUNDEE LIMITED</td>
+                        <td>
+                                 Signed by Michael Brown
+                                    <span class="secondary-text">Signed on: 01/12/2017</span>
+                        </td>
+                        <td>
+                            Spending enabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/V4RR8V/details" title="View agreement for TRAINING COMPANY OF DUNDEE LIMITED">View <span class="vh">agreement for TRAINING COMPANY OF DUNDEE LIMITED</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>St Cuthbert's Church of England Primary School, Pateley Bridge</td>
+                        <td>
+                                 Agreement not signed
+                                <span class="secondary-text">Agreement needs to be signed</span>
+                        </td>
+                        <td>
+                            Spending disabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/MD99RV/about-your-agreement" title="View agreement for St Cuthbert's Church of England Primary School, Pateley Bridge">View agreement <span class="vh">for St Cuthbert's Church of England Primary School, Pateley Bridge</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PATEL LIMITED</td>
+                        <td>
+                                 Agreement not signed
+                                <span class="secondary-text">Agreement needs to be signed</span>
+                        </td>
+                        <td>
+                            Spending disabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/VJKKPM/about-your-agreement" title="View agreement for PATEL LIMITED">View agreement <span class="vh">for PATEL LIMITED</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>APEX CHALLENGE</td>
+                        <td>
+                                 Agreement not signed
+                                <span class="secondary-text">Agreement needs to be signed</span>
+                        </td>
+                        <td>
+                            Spending disabled
+                        </td>
+                        <td class="link-right">
+                                <a href="/accounts/8MGY6M/agreements/VL776M/about-your-agreement" title="View agreement for APEX CHALLENGE">View agreement <span class="vh">for APEX CHALLENGE</span></a>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <p class="font-xsmall"><a href="/accounts/8MGY6M/agreements/remove">Remove an organisation from your account</a></p>
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

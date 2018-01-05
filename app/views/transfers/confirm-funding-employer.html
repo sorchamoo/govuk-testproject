@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+  <div class="column-full">
+
+                <h1 class="heading-xlarge">Confirm funding employer</h1>
+
+                <table class="responsive">
+                    <tbody>
+                            <tr>
+                                <td data-label="Account name">
+                                    Account name
+                                </td>
+                                <td>
+                                    123 Facilities Ltd - (s C4)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Account ID
+                                </td>
+                                 <td>
+                                  AS4XF
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  Approximate amount agreed to fund
+                                </td>
+                                <td>
+                                  £150,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                An outline of what has been agreed
+                                </td>
+                                <td>
+                                14 Senior engineering level 5 apprentices
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <a href="/accounts/organisations/search" class="button" id="add_new_account" aria-label="Add new account">Add new account</a>
+                </p>
+
+                <form method="GET" action="connection-made.html">
+                    <input name="__RequestVerificationToken" type="hidden" value="pX9Eqqs5hwP1-nQfXcNp1TtuDlgC5Yk-Zap3OZ7DNTlRmZhoRQNBo5VKi7z-A1k0LKw__rCVUKrl1FP74CEJP9zydb41">
+                    <div class="form-group  ">
+                        <fieldset>
+                            <legend>
+                          Do you wish to connect to this organisation?
+                            </legend>
+                            <label for="used-service-before" class="block-label selection-button-radio">
+                                <input type="radio" name="choice" id="used-service-before" value="2">
+                                Yes
+                            </label>
+                            <label for="not-used-service-before" class="block-label selection-button-radio">
+                                <input type="radio" name="choice" id="not-used-service-before" value="1">
+                                No, reject this request
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <!-- <button class="button" type="submit" id="submit-button">Continue</button> -->
+                         <button class="button">Continue</button>
+                    </div>
+                </form>
+
+            </div>
+
+    </main>
+
+{% endblock %}

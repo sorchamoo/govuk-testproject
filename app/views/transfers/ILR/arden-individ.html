@@ -1,0 +1,190 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs">
+        <ol role="navigation">
+            <li><a href="/accounts/8MGY6M/teams">Home</a></li>
+            <li>Your transactions</li>
+            <li>Payment details</li>
+            <li>Apprentice details</li>
+        </ol>
+    </div>
+
+    <script>
+        function backAway(){
+            //if it was the first page
+            if(history.length === 1){
+                window.location = "http://www.mysite.com/"
+            } else {
+                history.back();
+            }
+        }
+    </script>
+
+    <a href="#" onClick="backAway()">< Back</a>
+
+<div class="grid-row">
+    <div class="column-full">
+        <h1 class="heading-xlarge">
+          Arden Camargo
+        </h1>
+
+    </div>
+</div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+            <table class="responsive">
+              <tbody>
+                        <tr>
+                          <td>
+                              Unique Learner Number
+                          </td>
+                          <td>
+                              8043029856
+                          </td>
+                          <td>
+                            &nbsp;
+                          </td>
+                        </tr>
+                        <tr>
+
+                        <td> Status</td>
+                        <td>
+                          Live
+                        </td>
+                        <td>
+                          <a href="#">Edit status</a>
+                        </td>
+                      </tr>
+                    </table>
+<h2 class="heading-medium">Overview</h2>
+                    <table>
+                        <td>
+                            Training provider
+                        </td>
+                        <td>
+                            B2 Provider
+                        </td>
+                        </tr>
+                          <tr>
+                            <td>
+                              Cohort reference
+                            </td>
+                            <td >
+                                NP7B6X
+                            </td>
+                          </tr>
+                        </table>
+
+
+                                            <table>
+                                              <tr>
+                                                <td>  <h2 class="heading-medium">Apprentice</h2></td>
+                                                <td class="numeric"> <a href="#" >Edit</a></td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    Name
+                                                </td>
+                                                <td>
+                                                  Arden Camargo
+                                                </td>
+                                                </tr>
+                                                  <tr>
+                                                    <td>
+                                                      Date of birth
+                                                    </td>
+                                                    <td >
+                                                        8 August 2000
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      Apprenticeship training course
+                                                    </td>
+                                                    <td >
+                                                        Digital Marketing level 3
+                                                    </td>
+                                                  </tr>
+                                                </table>
+
+                                                                                                                    <table>
+                                                                      <tr>
+                                                                        <td>  <h2 class="heading-medium">Apprenticeship Details</h2></td>
+                                                                        <td class="numeric"> <a href="#" >Edit</a></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                            Training start date
+                                                                        </td>
+                                                                        <td>
+                                                                          17 August 2017
+                                                                        </td>
+                                                                        </tr>
+                                                                          <tr>
+                                                                            <td>
+                                                                            Training end date
+                                                                            </td>
+                                                                            <td >
+                                                                                12 August 2019
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>
+                                                                              Total cost of training
+                                                                            </td>
+                                                                            <td >
+                                                                                £5,000.00
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>
+                                                                              Payment history
+                                                                            </td>
+                                                                            <td >
+                                                                                <a href="#">View</a>
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>
+                                                                            Reference
+                                                                            </td>
+                                                                            <td >
+                                                                              XYZ123
+                                                                            </td>
+                                                                          </tr>
+
+                </tbody>
+            </table>
+
+
+
+  </div>
+  <div class="column-one-third pull-right">
+    <aside class="related">
+<h2 class="heading-medium" style="margin-top:20px;"></h2>
+</aside>
+  </div>
+
+</details>
+
+
+
+</div> <!--end div for 3/4 size -->
+    </div>
+</div>
+
+
+
+    </main>
+
+{% endblock %}

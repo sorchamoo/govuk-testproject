@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+  <div class="column-full">
+
+                <h1 class="heading-xlarge">Confirm training provider</h1>
+                <h2>UK Provider Reference Number '10057037' matches:</h2>
+
+
+                <h2>LEARNDIRECT APPRENTICESHIPS LIMITED</h2>
+                  <p>UKPRN: 10057037</p>
+                    <p>Is this the main provider of the apprenticeship training?</p>
+
+                <form method="GET" action="confirm-training-provider.html">
+                    <input name="__RequestVerificationToken" type="hidden" value="pX9Eqqs5hwP1-nQfXcNp1TtuDlgC5Yk-Zap3OZ7DNTlRmZhoRQNBo5VKi7z-A1k0LKw__rCVUKrl1FP74CEJP9zydb41">
+                    <div class="form-group  ">
+                        <fieldset>
+                            <legend>
+                        Is this the main provider of the apprenticeship training?
+                            </legend>
+                            <label for="used-service-before" class="block-label selection-button-radio">
+                                <input type="radio" name="choice" id="used-service-before" value="2">
+                            Yes, use LEARNDIRECT APPRENTICESHIPS LIMITED
+                            </label>
+                            <label for="used-service-before" class="block-label selection-button-radio">
+                                <input type="radio" name="choice" id="used-service-before" value="2">
+                            No, change UK Provider Reference Number
+                            </label>
+
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <!-- <button class="button" type="submit" id="submit-button">Continue</button> -->
+                         <button class="button">Continue</button>
+                    </div>
+                </form>
+
+            </div>
+
+    </main>
+
+{% endblock %}

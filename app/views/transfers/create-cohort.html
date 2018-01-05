@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+  <div class="column-full">
+
+                <h1 class="heading-xlarge">Choose organisation</h1>
+
+
+
+
+                <form method="GET" action="agreement-not-signed.html">
+                    <input name="__RequestVerificationToken" type="hidden" value="pX9Eqqs5hwP1-nQfXcNp1TtuDlgC5Yk-Zap3OZ7DNTlRmZhoRQNBo5VKi7z-A1k0LKw__rCVUKrl1FP74CEJP9zydb41">
+                    <div class="form-group  ">
+                        <fieldset>
+                            <legend>
+                        Which organisation is named on the contract with the training provider for the apprentices you’d like to add?
+                            </legend>
+                            <label for="used-service-before" class="block-label selection-button-radio">
+                                <input type="radio" name="choice" id="used-service-before" value="2">
+                                Acme Ltd
+                            </label>
+
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <!-- <button class="button" type="submit" id="submit-button">Continue</button> -->
+                         <button class="button">Continue</button>
+                    </div>
+                </form>
+
+            </div>
+
+    </main>
+
+{% endblock %}

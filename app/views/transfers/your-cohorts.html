@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+<div class="breadcrumbs">
+    <a href="/commitments/accounts/8MGY6M/apprentices/home" aria-label="Back to Apprentices" class="back-link">Back to apprentices</a>
+</div>
+
+<div class="grid-row">
+<div class="column-two-thirds">
+    <div class="hgroup">
+        <h1 class="heading-xlarge">Your cohort requests</h1>
+    </div>
+
+    <div class="column-one-half bingo-background block-one clickable">
+        <h2 class="bold-xxlarge">
+                <a href="/commitments/accounts/8MGY6M/apprentices/cohorts/review" title="4 ready for review" aria-label="View all new requests that are ready for review">
+                    4
+                </a>
+        </h2>
+        <p class="heading-small">Ready for review</p>
+    </div>
+
+    <div class="column-one-half bingo-background block-two clickable">
+        <h2 class="bold-xxlarge">
+                <a href="/commitments/accounts/8MGY6M/apprentices/cohorts/provider" title="9 with provider" aria-label="View all new requests from that are with the provider">
+                    9
+                </a>
+        </h2>
+        <p class="heading-small">With training providers</p>
+    </div>
+
+    <div class="column-one-half bingo-background block-three clickable">
+        <h2 class="bold-xxlarge">
+                <a href="/commitments/accounts/8MGY6M/apprentices/cohorts/draft?redirectTo=NewRequests" title="12 waiting to be sent" aria-label="Waiting to be sent">
+                    12
+                </a>
+        </h2>
+        <p class="heading-small">Draft</p>
+    </div>
+
+</div> <!-- /column-two-thirds-->
+
+<div class="column-one-third pull-right"></div><!-- /column-one-third -->
+</div>
+
+
+</main>
+
+{% endblock %}

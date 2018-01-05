@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+
+
+    <div class="breadcrumbs" id="js-breadcrumbs"><a href="#" class="link-back">Back</a></div>
+
+
+
+        <div class="hgroup">
+            <h1 class="heading-xlarge">Transfer details</h1>
+            <dl class="inline">
+              <p>Date <span class="bolding"> 15 Sep 2017</span><br />
+              Transfer to <span class="bolding">T Ransdfer Receiver Ltd</span><br />
+              No. of Apprentices <span class="bolding">4</span></p>
+
+                <dd>Digital Design Level 3</dd>
+            </dl>
+        </div>
+
+        <table class="responsive">
+            <thead>
+              <colgroup>
+                <col span="2">
+                <col span="2" class="highlighted-table-column">
+                <col span="2">
+              </colgroup>
+          <!--  <tr>
+                <th colspan="2"></th>
+                <th class="highlighted-table-column" scope="colgroup" colspan="2">Co-investment</th>
+                <th colspan="2"></th>
+            </tr> -->
+            <tr>
+                <th scope="col" class="tw-20"></th>
+
+                <th scope="col" class="numeric tw-20 highlight" >Amount</th>
+                <th scope="col" class="numeric tw-20 highlight"></th>
+                <th scope="col" class="numeric tw-20"></th>
+                <th scope="col" class="numeric tw-20"></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="responsive-tr">
+                        <td data-label="Apprentice"><a href="../ILR/arden-individ.html">Apprentice 1</a></td>
+
+                    <td class="numeric highlight" data-label="Government contribution">-£100.00</td>
+                    <td class="numeric " data-label="Your contribution"></td>
+                    <td class="numeric" data-label="Amount"></td>
+                    <td class="numeric" data-label="Amount"><a href="../ILR/arden-may.html">Details</a></td>
+                </tr>
+                <tr class="responsive-tr">
+                        <td data-label="Apprentice"><a href="../ILR/arden-individ.html">Apprentice 2</a></td>
+
+                    <td class="numeric highlight" data-label="Government contribution">-£100.00</td>
+                    <td class="numeric " data-label="Your contribution"></td>
+                    <td class="numeric" data-label="Amount"></td>
+                    <td class="numeric" data-label="Amount"><a href="../ILR/arden-may.html">Details</a></td>
+                </tr>
+                <tr class="responsive-tr">
+                        <td data-label="Apprentice"><a href="../ILR/arden-individ.html">Apprentice 3</a></td>
+
+                    <td class="numeric highlight" data-label="Government contribution">-£400.00</td>
+                    <td class="numeric " data-label="Your contribution"></td>
+                    <td class="numeric" data-label="Amount"></td>
+                    <td class="numeric" data-label="Amount"><a href="../ILR/arden-may.html">Details</a></td>
+                </tr>
+                <tr class="responsive-tr">
+                        <td data-label="Apprentice"><a href="../ILR/arden-individ.html">Apprentice 4</a></td>
+                  
+                    <td class="numeric highlight" data-label="Government contribution">-£400.00</td>
+                    <td class="numeric " data-label="Your contribution"></td>
+                    <td class="numeric" data-label="Amount"></td>
+                    <td class="numeric" data-label="Amount"><a href="../ILR/arden-may.html">Details</a></td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td data-label="Totals"> </td>
+                    <td data-label="Paid from levy" class="total numeric no-wrap"> </td>
+                    <td data-label="Government contribution" class="total numeric no-wrap"> </td>
+                    <td data-label="Your contribution" class="highlight total numeric no-wrap">£1,000.00</td>
+                    <td data-label="Amount" class="total numeric no-wrap"></td>
+                      <td class="numeric" data-label="Amount"><a href="../ILR/arden-may.html">Details</a></td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+          <br>
+        <div class="panel">
+            <p>It's up to you and your training provider to decide when your contribution is paid.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    </main>
+
+
+{% endblock %}

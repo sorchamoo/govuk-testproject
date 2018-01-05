@@ -1,0 +1,12 @@
+How to add a new set of styles:
+Set up a .scss file in folder "sorchapatterns"
+C:\Users\smoos\Documents\ESFA\govuk-testproject\app\assets\sass\sorchapatterns
+
+Input styles
+
+Then link to new file from file "application.scss" (one folder level up) in C:\Users\smoos\Documents\ESFA\govuk-testproject\app\assets\sass
+And copy and paste @import 'sorchapatterns/FILENAME'; 	- and save the "application.scss" file - this calls in your new sass file to include your new styles
+
+
+
+C:\Users\smoos\Documents\ESFA\govuk-testproject\app\assets\sass
