@@ -37,9 +37,12 @@
 
       <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
 
-          <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+        <!--  <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
             You can't enter a future date
-          </h2>
+          </h2> -->
+          <ul class="error-summary-list">
+        <li><a href="#start-date">You can't enter a future date</a></li>
+      </ul>
 
           <!--<p>
             Optional description of the errors and how to correct them
@@ -71,6 +74,7 @@
            </span>
                                        <span class="form-hint">For example, 5 2017</span>
                                    </legend>
+                                    <span class="error-message">The latest date you can enter is 1 2018</span>
                                    <div class="form-date">
                                        <div class="form-group form-group-month">
                                            <label class="form-label" for="dob-month">Month</label>
@@ -82,7 +86,7 @@
                                        </div>
                                    </div>
                                </fieldset>
-                                 <span class="error-message">Enter a different start date</span>
+
                            </div>
                        </form>
 
@@ -93,6 +97,7 @@
        </span>
                                    <span class="form-hint">For example, 10 2017</span>
                                </legend>
+                               <span class="error-message">The latest date you can enter is 1 2018</span>
                                <div class="form-date">
                                    <div class="form-group form-group-month">
                                        <label class="form-label" for="dob-month">Month</label>
@@ -104,7 +109,7 @@
                                    </div>
                                </div>
                            </fieldset>
-                             <span class="error-message">Enter a different end date</span>
+
                        </div>
                    </form>
 
